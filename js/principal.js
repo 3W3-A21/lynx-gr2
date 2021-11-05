@@ -37,3 +37,16 @@ document.querySelectorAll('.actions-compte span').forEach(function(btnSpan) {
 // btnMdp.addEventListener('click', afficherFormulaire);
 // btnConnexion.addEventListener('click', afficherFormulaire);
 
+// Exemple d'utilisation de la méthode 'forEach()'
+let fruits = [
+    'pamplemousse',
+    'grenade',
+    'banane',
+    'kiwi',
+    'pomme'
+];
+
+fruits.forEach(function(x) {
+    console.log(x.toUpperCase());
+});
+

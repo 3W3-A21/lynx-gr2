@@ -127,7 +127,7 @@ section.principale form fieldset {
   font-size: 1.3em;
 }
 
-section.principale form .erreur {
+section.principale .formulaires-utilisateurs .erreur {
   border: 3px solid #900;
   border-radius: 2px;
   margin: 10px 0;

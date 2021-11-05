@@ -11,15 +11,13 @@
                     <legend><?= $frmLegende; ?></legend>
                     <input type="text" name="courriel" placeholder="<?= $frmCourrielPH; ?>">
                     <input type="password" name="mdp" placeholder="<?= $frmMdpPH; ?>">
-                    <input type="submit" value="<?= $frmBoutonConnecter; ?>">
+                    <input type="submit" name="btnSubmitConnexion" value="<?= $frmBoutonConnecter; ?>">
                     
                 </fieldset>
-                <article>
-                    <div class="actions-compte">
-                        <span data-formulaire="frm-mdp" class="btn-mdp"><?= $lienMdpOublie; ?></span>
-                        <span data-formulaire="frm-nouveau" class="btn-nouveau"><?= $lienNouveauCompte; ?></span>
-                    </div>
-                </article>
+                <div class="actions-compte">
+                    <span data-formulaire="frm-mdp" class="btn-mdp"><?= $lienMdpOublie; ?></span>
+                    <span data-formulaire="frm-nouveau" class="btn-nouveau"><?= $lienNouveauCompte; ?></span>
+                </div>
             </form>
             <!-- Nouveau compte -->
             <form class="frm-nouveau" action="compte.php" method="post">
@@ -37,7 +35,7 @@
                     <label>Mot de passe
                         <input type="password" name="mdp" placeholder="<?= $frmMdpPH; ?>">
                     </label>
-                    <input type="submit" value="Créer compte">
+                    <input type="submit" name="btnSubmitNouveau" value="Créer compte">
                 </fieldset>
                 <div class="actions-compte">
                     <span data-formulaire="frm-connexion" class="btn-connexion">Connexion</span>
@@ -48,7 +46,7 @@
                 <fieldset>
                     <legend>Réinitialiser mon mot de passe</legend>
                     <input type="text" name="courriel" placeholder="<?= $frmCourrielPH; ?>">
-                    <input type="submit" value="Soumettre">
+                    <input type="submit" name="btnSubmitMdp" value="Soumettre">
                 </fieldset>
                 <div class="actions-compte">
                     <span data-formulaire="frm-connexion" class="btn-connexion">Connexion</span>

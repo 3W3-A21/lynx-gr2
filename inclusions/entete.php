@@ -8,8 +8,8 @@ if(isset($_GET['action']) && $_GET['action'] == 'lo') {
     unset($_SESSION['uc']);
 }
 
-// 2) Si le formulaire est soumit
-if(isset($_POST['courriel'])) {
+// 2) Si le formulaire de *****connexion***** est soumit
+if(isset($_POST['btnSubmitConnexion'])) {
     // 3) Récupérer la saisie de l'utilisateur
     $courriel = $_POST['courriel'];
     $mdp = $_POST['mdp'];
@@ -30,6 +30,16 @@ if(isset($_POST['courriel'])) {
     else {
         $erreurConnexion = true;
     }
+}
+
+// Si le formulaire *** nouveau compte *** est soumit
+if(isset($_POST['btnSubmitNouveau'])) {
+  echo 'On a soumit le formulaire de création de nouveau compte...';
+}
+
+// Si le formulaire *** mdp oublié *** est soumit
+if(isset($_POST['btnSubmitMdp'])) {
+  echo 'On a soumit le formulaire de rinitialisation du mot de passe...';
 }
 
 // Langues disponibles
