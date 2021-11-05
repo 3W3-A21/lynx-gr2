@@ -111,6 +111,14 @@ body > section.principale ul {
 /*
   MON COMPTE
 */
+.formulaires-utilisateurs form {
+  display: none;
+}
+
+.formulaires-utilisateurs form.frm-affiche {
+  display: block;
+}
+
 section.principale form fieldset {
   border: 3px solid #141a2e;
   border-radius: 2px;
@@ -152,6 +160,15 @@ section.principale form .actions-compte {
   justify-content: space-between;
   font-size: 1rem;
   padding: 5px;
+}
+
+section.principale form .actions-compte span {
+  cursor: pointer;
+}
+
+section.principale form .actions-compte span:hover {
+  font-weight: bold;
+  color: gold;
 }
 
 /*

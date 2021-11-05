@@ -8,5 +8,6 @@
             <?php } ?>
         </nav>
     </footer>
+    <script src="js/principal.js"></script>
 </body>
 </html>
